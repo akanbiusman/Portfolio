@@ -2,10 +2,10 @@
     padding: 0;
     margin: 20px;
     color: inherit;
-    animation: 2s anime;
+    animation: 2s fadeIn;
 }
 
-#resume{
+#resume {
     font-size: 40px;
     font-family: 'Cairo', sans-serif;
     margin: 150px auto;
@@ -27,6 +27,8 @@
     font-family: 'Cairo', sans-serif;
     line-height: 120%;
     margin-bottom: 18vmin;
+    animation: 1.5s color normal;
+    animation-delay: 1s;
 }
 
 #image {
@@ -86,10 +88,42 @@
     }
 }
 
+@keyframes color {
+    0% {
+        color: #f2f2f2;
+    }
+
+    25% {
+        color: #bdbdbd;
+    }
+
+    50% {
+        color: #808080;
+    }
+
+    75% {
+        color: #494949;
+    }
+
+    100% {
+        color: #000000;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     * {
         margin: 10px;
-        animation: 2s anime;
+        animation: 1s fadeIn;
     }
 
     #image {
@@ -100,6 +134,8 @@
 
     #header>h1 {
         font-size: 3.5em;
+        animation: 1.5s color normal;
+        animation-delay: 1s;
     }
 
     p.largeText {
