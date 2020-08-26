@@ -11,6 +11,19 @@
     margin: 150px auto;
 }
 
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    font-family: 'Cairo', sans-serif;
+    border-style: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #bdbdbd;
+}
+
 #header {
     margin: 50px auto;
     width: 100%;
@@ -76,15 +89,15 @@
 
 @keyframes anime {
     0% {
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 
     50% {
-        transform: translateX(10px);
+        transform: translateY(10px);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
@@ -126,9 +139,22 @@
         animation: 1s fadeIn;
     }
 
+    button {
+        padding: 10px;
+        border-radius: 10px;
+        background: #f2f2f2;
+        border-style: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #bdbdbd;
+    }
+
     #image {
         height: 140vmin;
         background-position: center;
+        box-sizing: border-box;
         background-image: url(./img/me.JPG);
     }
 
